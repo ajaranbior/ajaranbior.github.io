@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ajaranbior.github.io/sitemap.xml
+Sitemap: https://ajaranbior.github.io/kafka-apaviadanni/sitemap.xml
