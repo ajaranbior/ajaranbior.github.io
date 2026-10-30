@@ -58,9 +58,12 @@ body {
 main {
   max-width: 32em;
   margin: 0 auto;
-  padding: 18vh 16px 4em;
+  padding: 8vh 16px 4em;
 }
 h1 { font-weight: normal; font-size: 2em; line-height: 1.2; margin: 0 0 .5em; }
+h2 { font-weight: normal; font-size: 1.15em; margin: 0 0 .6em; }
+section { padding: 1.5em 0; }
+section + section { border-top: 1px solid var(--line); }
 p { margin: 0 0 1em; color: var(--muted); }
 a.go {
   display: inline-block;
@@ -76,8 +79,21 @@ a.go:hover { background: var(--accent); color: var(--bg); }
 <body>
 <main>
   <h1>Кафка па-беларуску</h1>
-  <p>«Ператварэнне», «Прысуд», «У калоніі для зняволеных», «Перад законам» і іншыя апавяданні і мініяцюры Франца Кафкі ў перакладзе Лявона Баршчэўскага — наркамаўкай, тарашкевіцай або лацінкай.</p>
-  <a class="go" href="/kafka-apaviadanni/">Чытаць</a>
+  <section lang="be" aria-labelledby="narkam">
+    <h2 id="narkam">Наркамаўка</h2>
+    <p>«Ператварэнне», «Прысуд», «У калоніі для зняволеных», «Перад законам» і іншыя апавяданні і мініяцюры Франца Кафкі ў перакладзе Лявона Баршчэўскага — наркамаўкай, тарашкевіцай або лацінкай.</p>
+    <a class="go" href="/kafka-apaviadanni/?ortho=narkam">Чытаць (наркамаўка)</a>
+  </section>
+  <section lang="be-tarask" aria-labelledby="tarask">
+    <h2 id="tarask">Тарашкевіца</h2>
+    <p>«Ператварэньне», «Прысуд», «У калёніі для зьняволеных», «Перад законам» і іншыя апавяданьні і мініяцюры Франца Кафкі ў перакладзе Лявона Баршчэўскага — наркамаўкай, тарашкевіцай або лацінкай.</p>
+    <a class="go" href="/kafka-apaviadanni/?ortho=tarask">Чытаць (тарашкевіца)</a>
+  </section>
+  <section lang="be-Latn" aria-labelledby="lacinka">
+    <h2 id="lacinka">Łacinka</h2>
+    <p>«Pieratvareńnie», «Prysud», «U kalonii dla źniavolenych», «Pierad zakonam» i inšyja apaviadańni i minijaciury Franca Kafki ŭ pierakładzie Lavona Barščeŭskaha — narkamaŭkaj, taraškievicaj abo łacinkaj.</p>
+    <a class="go" href="/kafka-apaviadanni/?ortho=lacinka">Čytać (łacinka)</a>
+  </section>
 </main>
 </body>
 </html>
